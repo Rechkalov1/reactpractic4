@@ -13,6 +13,7 @@ export const App = () => {
      <Route path='/'element={<Layout/>}>
       <Route path='dashboard' element={<div>dashboard</div>}/>
       <Route path='sales' element={<Sales/>}>
+        <Route index element={<div>Sales index route</div>}/>
         <Route path='analytics' element={<div>Analytics</div>}/>
         <Route path='invoices' element={<Invoices/>}>
           <Route path=':invoiceId' element={<InvoiceDetails/>}/>
